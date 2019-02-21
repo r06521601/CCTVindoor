@@ -74,7 +74,6 @@ class AIApp extends React.Component {
     predictions.forEach(prediction => {
         if(prediction.class == 'person')
         {
-          alert('!!!')
 
             const x = prediction.bbox[0];
             const y = prediction.bbox[1];
