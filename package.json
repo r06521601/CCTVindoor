@@ -1,0 +1,41 @@
+{
+  "name": "viewer-nodejs-tutorial",
+  "version": "1.0.0",
+  "description": "Getting Started with Viewer and NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node start.js",
+    "dev": "node start.js",
+    "nodemon": "nodemon start.js --ignore www/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Autodesk-Forge/viewer-nodejs-tutorial.git"
+  },
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^0.1.1",
+    "@tensorflow/tfjs-node": "^0.3.0",
+    "bootstrap": "*",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "font-awesome": "^4.7.0",
+    "forge-apis": "^0.4.1",
+    "jquery": "*",
+    "moment": "*",
+    "mysql": "^2.15.0",
+    "oauth": "^0.9.14",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "request": "^2.72.0",
+    "serve-favicon": "^2.3.0",
+    "three-orbit-controls": "^82.1.0",
+    "threejs-orbit-controls": "^1.0.3"
+  },
+  "author": "Jaime Rosales",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Autodesk-Forge/viewer-nodejs-tutorial/issues"
+  },
+  "homepage": "https://github.com/Autodesk-Forge/viewer-nodejs-tutorial#readme"
+}
