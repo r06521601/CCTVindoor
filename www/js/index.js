@@ -119,25 +119,3 @@ function resetBackground (){
 }
 
 
-/////////////////////////////////////////////////////////////////////////////////
-//
-// Get device orientation
-//
-/////////////////////////////////////////////////////////////////////////////////
-/*
-if (window.DeviceOrientationEvent) {
-    // Listen for the deviceorientation event and handle the raw data
-    window.addEventListener('deviceorientation', function(event) {
-        console.log(event)
-      if(event.webkitCompassHeading) {
-        // Apple works only with this, alpha doesn't work
-        compassdir = event.webkitCompassHeading;  
-
-        alert(compassdir)
-
-      }
-      else compassdir = event.alpha;
-    });
-  }
-  */
-

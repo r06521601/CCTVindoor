@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="" id= "html" style="margin: 0;padding: 0; height: 100vh">
+
+<head id= "head" style="margin: 0;padding: 0;>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1">
+
+    <title>AppClientWEB</title>
+
+    <!-- Common packages: JQuery & Bootstrap -->
+
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- The Viewer JS -->
+
+</head>
+                  
+<body id=body style='height:100vh' background="css/Time-Tracking-Software-for-Construction.jpg" >
+    <div style='padding-top:30vh' id='divv'>
+    <center>
+        <img id="frame">
+    </center>
+    <center style="opacity:0.9;">
+
+    <a class="button" id='takepic' onclick="myFunction()">Take a Photo</a>
+    
+    <input type="file" accept="image/*" capture="camera" id="camera">
+
+    <h2 id='time' style='text-align: left;'>Time:</h2>
+
+    <h2 id='compass'  style='text-align: left;'>Compass:</h2>
+
+    </center>
+</div>
+
+    <script>
+      var camera = document.getElementById('camera');
+      var frame = document.getElementById('frame');
+      var timer = document.getElementById('time');
+      var comp = document.getElementById('compass');
+      var button = document.getElementById('takepic');
+      var divv = document.getElementById('divv');
+      function myFunction(){
+          camera.click();
+      }
+    
+      camera.addEventListener('change', function(e) {
+          
+        var file = e.target.files[0];
+        // Do something with the image file.
+        frame.src = URL.createObjectURL(file);
+        divv.style.paddingTop = '0';
+        var date = new Date();
+        timer.innerText = 'Time: '+date;
+        comp.innerText = 'Compass: '+window.compEvent;
+
+      });
+    </script>
+    <script src="./js/index.js"></script>
+
+
+    
+                        
+    
+</body>
+    
+    
+
+    
+        
+
+</html>

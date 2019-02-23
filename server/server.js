@@ -29,6 +29,7 @@ app.use(express.urlencoded({limit: '50mb'}));
 
 // prepare server routing
 app.use('/', express.static(__dirname + '/../www')); // redirect static calls
+app.use('/app', express.static(__dirname + '/../app')); // redirect static calls
 app.use('/js', express.static(__dirname + '/../node_modules/bootstrap/dist/js')); // redirect static calls
 app.use('/js', express.static(__dirname + '/../node_modules/moment/min')); // redirect static calls
 app.use('/js', express.static(__dirname + '/../node_modules/jquery/dist')); // redirect static calls
