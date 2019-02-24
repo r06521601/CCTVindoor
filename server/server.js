@@ -46,8 +46,8 @@ app.set('host', process.env.HOST || '192.168.1.18');//ip setting
 // prepare our API endpoint routing
 var oauth = require('./oauth');
 app.use('/', oauth); // redirect oauth API calls
-//var connect = require('./connect');
-//app.use('/', connect)
-//var insert = require('./insert');
-//app.use('/', insert)
+var connect = require('./connect');
+app.use('/', connect)
+var insert = require('./insert');
+app.use('/', insert)
 module.exports = app;
