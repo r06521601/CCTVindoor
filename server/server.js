@@ -38,7 +38,7 @@ app.use('/css', express.static(__dirname + '/../node_modules/font-awesome/css'))
 app.use('/fonts', express.static(__dirname + '/../node_modules/font-awesome/fonts')) // redirect static calls
 app.use('/fonts', express.static(__dirname + '/../node_modules/bootstrap/dist/fonts')); // redirect static calls
 app.set('port', process.env.PORT || 3000); // main port
-//app.set('host', process.env.HOST || '192.168.1.18');//ip setting
+app.set('host', process.env.HOST || '192.168.1.6');//ip setting
 
 
 
