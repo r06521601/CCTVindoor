@@ -1,6 +1,6 @@
 # Combine Computer vision and CCTV to do indoorpositioning - Master thesis
 
-![thumbnail](demo.gif =600x400) ![thumbnail](app.jpg)
+![thumbnail](demo.gif){:height="700px" width="400px"} ![thumbnail](app.jpg)
 
 ## Description
 
