@@ -1,6 +1,6 @@
 # Combine Computer vision and CCTV to do indoorpositioning - Master thesis
 
-![thumbnail](demo.gif =600x400) ![thumbnail](app.jpg)
+![thumbnail](demo.gif)![thumbnail](app.jpg)
 
 ## Description
 
@@ -12,7 +12,7 @@ I created the SSD model to detect the person in CCTV screen. when the person's b
 
 Cause project built on the web system, when the construction site engineer uses the app to take photos, the web will show the person's position on the 3D model.
 
-##To Do
+## To Do
 
 - Case study
 - Draw the real-time person position on the 3D model
