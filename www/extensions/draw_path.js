@@ -17,6 +17,7 @@ asd.geometry.attributes = {position:{array:[]}}
 asd.position.x = pos.x;
 asd.position.y = pos.y;
 asd.position.z = pos.z;
+
 this.points.push(pos);
 if(this.points.length >1)
 {

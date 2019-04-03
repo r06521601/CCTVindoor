@@ -5,9 +5,30 @@ var express = require('express');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
-var http = require('http');
+
 
 var app = express();
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+
+
+  socket.on("disconnect", () => {
+    console.log("a user go out");
+  });
+
+
+    socket.on("message", (obj) => {
+        io.emit("message", 'On_site_user:' + obj);
+    });
+
+});
+
+
+server.listen(3001);
+
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 

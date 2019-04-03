@@ -30,6 +30,7 @@
     "react-dom": "^16.8.2",
     "request": "^2.72.0",
     "serve-favicon": "^2.3.0",
+    "socket.io": "^2.2.0",
     "three-orbit-controls": "^82.1.0",
     "threejs-orbit-controls": "^1.0.3"
   },
