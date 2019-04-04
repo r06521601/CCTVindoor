@@ -20,7 +20,7 @@ class Legend extends Autodesk.Viewing.UI.DockingPanel {
     this.container.style.top= '0px';
     this.container.style.left= '338px';
     this.container.style.position= 'absolute';
-    this.container.style.height= '500px';
+    this.container.style.height= '371px';
 
     this.DOMContent = document.createElement('div')
 

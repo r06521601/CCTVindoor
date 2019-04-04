@@ -15,7 +15,7 @@
     
             viewer.model.getFragmentList().getWorldBounds(event.fragIdsArray[0], bBox);
 
-            drawBox(bBox);
+            //drawBox(bBox);
             /*
 
             //console.log(bBox);

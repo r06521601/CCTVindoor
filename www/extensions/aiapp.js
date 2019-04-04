@@ -1,5 +1,6 @@
 
 
+
 class AIApp extends React.Component {
   videoRef = React.createRef();
   canvasRef = React.createRef();
@@ -68,7 +69,13 @@ class AIApp extends React.Component {
             const textHeight = parseInt(font, 10); // base 10
             ctx.fillRect(x, y, textWidth + 4, textHeight + 4);
 
+
+            //Trans the homography matrix
+            var target_x = (prediction.bbox[0])+(prediction.bbox[2])/2;
+            var result = homo_trans(target_x,prediction.bbox[1])
+            drawBox(result)
         }
+
     });
 
     predictions.forEach(prediction => {
@@ -96,14 +103,14 @@ class AIApp extends React.Component {
           ref={this.videoRef}
           position= 'absolute'
           width="600"
-          height="500"
+          height="338"
         />
         <canvas
           className="size"
           ref={this.canvasRef}
           position= 'absolute'
           width="600"
-          height="500"
+          height="338"
         />
       </div>
     );

@@ -22,6 +22,7 @@
     "font-awesome": "^4.7.0",
     "forge-apis": "^0.4.1",
     "jquery": "*",
+    "jsfeat": "0.0.8",
     "mariadb": "^2.0.3",
     "moment": "*",
     "mysql": "^2.16.0",

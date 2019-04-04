@@ -7,12 +7,12 @@ this.points = [];
 function drawBox (bbox){
     cleanPath();
 
-const { min, max } = bbox;
+const { x, y } = bbox;
 
 var cubeGeometry = new THREE.CircleGeometry(0.5, 32);
 var cubeMaterial = new THREE.MeshBasicMaterial({color: 0xffffff, side: THREE.DoubleSide, transparent: true, opacity: 1, depthTest: false});
 var asd = new THREE.Mesh(cubeGeometry, cubeMaterial);
-var pos = new THREE.Vector3((max.x+min.x)/2, (max.y+min.y)/2, max.z);
+var pos = new THREE.Vector3(x, y, -7.053806304931641);
 asd.geometry.attributes = {position:{array:[]}}
 asd.position.x = pos.x;
 asd.position.y = pos.y;

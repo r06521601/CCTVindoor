@@ -5,7 +5,9 @@ socket = io.connect('ws://192.168.1.6:3001');
 
 socket.on('message', (obj) => {
     alert(obj)
-});
+}); 
+var homo_kernel = new jsfeat.motion_model.homography2d();
+
 
 
 /////////////////////////////////////////////////////////////////////////////////
