@@ -12,7 +12,7 @@ I created the SSD model to detect the person in CCTV screen. when the person's b
 
 Cause project built on the web system, when the construction site engineer uses the app to take photos, the web will show the person's position on the 3D model.
 
-## [Homography matrix][1][1]
+## [Homography matrix][1]
 
 Homography matrix transform used to transfer the coordinate system of CCTV to coordinate system of the real world. To solve the unknown parameters, I used 4 pairs of coordinates to find the value of each parameter. For the concept of homography matrix, see the image below:
 
