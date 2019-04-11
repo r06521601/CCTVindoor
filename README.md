@@ -22,7 +22,7 @@ To calculate the homography matrix, plz follow the steps below:
 
 1. Find 4 pairs of coordinates.
 2. use homography.py to calculate the transform.
-3. pass parameters of the transform to src/extensions/homography.js
+3. pass parameters of the transform to www/extensions/homography.js
 
 ## To Do
 
